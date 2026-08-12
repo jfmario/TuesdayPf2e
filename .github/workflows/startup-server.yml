@@ -2,6 +2,8 @@ name: Startup Server
 
 on:
   workflow_dispatch:
+  schedule:
+    - cron: '0 22 * * 1'  # Mon 5 PM EST / 6 PM EDT
 
 jobs:
   startup:

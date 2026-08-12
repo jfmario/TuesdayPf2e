@@ -2,6 +2,8 @@ name: Shut Down Server
 
 on:
   workflow_dispatch:
+  schedule:
+    - cron: '0 6 * * 4'   # Thu 1 AM EST / 2 AM EDT
 
 jobs:
   shutdown:
